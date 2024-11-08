@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("./assets/Images/TECH\ TITANS_Section\ A.jpg");
+}
+#weatherInput{
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    width: 15%;
+    height: 3vh;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+#submit{
+    position: absolute;
+    left: 96%;
+    top: 2%;
+    width: 2%;
+    height: 35px;
+    font-size: large;
+    border-radius: 30px;
+    background-color: aqua;
+}
+h1{
+    font-family: 'Alex Brush';
+    font-size: 300px;
+    position: absolute;
+    top:30%;
+    left: 20%;
+    filter: drop-shadow(2px 2px 20px white);
+    animation: color-change 2s infinite;
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+  }
+h6{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 100px;
+}
+#start{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: transparent;
+    color: transparent;
+    border: transparent;
+    border-radius: 50%;
+}
+
+
+#stop{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    background: transparent;
+    color: transparent;
+    border: transparent;
+}
+
+.temp{
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: 33vh;
+    position: absolute;
+    left: 73%;
+    top: 65%;
+    font-size: 22px;
+    line-height: 180%;
+    padding-left: 2%;
+    border-radius: 20px;
+    display: none;
+}
+#makeItSmall{
+    position: absolute;
+    top: 96%;
+    width: 10%;
+    height: 3vh;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+#weatherIcon{
+    position: absolute;
+    top: 22%;
+    right: 2%;
+}
+#time{
+    font-size: 50px;
+}
+
+

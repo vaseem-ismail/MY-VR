@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body{
+            background-image: url("./assets/Images/Itachi.jpg");
+            background-repeat: no-repeat;
+            background-size: 103%;
+            
+        }
+        form {
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            border: 2px black solid;
+            top: 25%;
+            left: 30%;
+            border-radius: 40px;
+            backdrop-filter: blur(20px);
+        }
+
+        h1 {
+            position: absolute;
+            top: 4%;
+            left: 17%;
+            font-size: 40px;
+        }
+
+        #lb1 {
+            position: absolute;
+            top: 45%;
+            left: 30%;
+        }
+
+        #name {
+            position: absolute;
+            top: 50%;
+            left: 18%;
+            width: 60%;
+            height: 2rem;
+            border-radius: 40px;
+        }
+
+        #lb2 {
+            position: absolute;
+            top: 63%;
+            left: 30%;
+        }
+
+        #password {
+            position: absolute;
+            top: 68%;
+            left: 18%;
+            width: 60%;
+            height: 2rem;
+            border-radius: 40px;
+        }
+
+        #submit {
+            position: absolute;
+            top: 85%;
+            width: 20%;
+            height: 40px;
+            font-size: large;
+            left: 35%;
+            border-radius: 50px;
+        }
+        #who{
+            position: absolute;
+            top: 30%;
+            left: 18%;
+            width: 60%;
+            height: 2rem;
+            border-radius: 40px;
+        }
+        #lb3{
+            position: absolute;
+            top: 25%;
+            left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>ONLY ADMIN ALLOWED</h1>
+        <label id="lb3">WHO ARE YOU</label>
+        <input id="who" type="text">
+        <label id="lb1">ENTER THE CORRECT USERNAME</label>
+        <input type="name" id="name">
+        <label id="lb2">ENTER THE CORRECT PASSWORD</label>
+        <input type="password" id="password">
+        <button id="submit">ONLY ADMIN</button>
+    </form>
+
+    <script>
+        const aboutWho = document.getElementById("who");
+        const Name = document.getElementById('name');
+        const Password = document.getElementById('password');
+        const Btn = document.getElementById("submit");
+        Btn.addEventListener("click", () => {
+            const User = ["Mohamed_Vaseem","Sri_Ram","Dharani_Sri"];
+            for(i=0;i<=User.length-1;i++){
+            if (Name.value == "MohamedVaseem" && Password.value == "IMDV_TM" && aboutWho.value == i) {
+                alert("Welcome Mohamed Vaseem");
+                window.open("cals.html");
+            }
+        
+           
+            else {
+                alert("Only Creator can Access the Web"); 
+            }
+        }
+        })
+
+        
+        
+    </script>
+</body>
+
+</html>
