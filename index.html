@@ -103,18 +103,20 @@
         const Password = document.getElementById('password');
         const Btn = document.getElementById("submit");
         Btn.addEventListener("click", () => {
-            const User = ["Mohamed_Vaseem","Sri_Ram","Dharani_Sri"];
-            for(i=0;i<=User.length-1;i++){
-            if (Name.value == "MohamedVaseem" && Password.value == "IMDV_TM" && aboutWho.value == i) {
-                alert("Welcome Mohamed Vaseem");
-                window.open("cals.html");
-            }
+        // setTimeout(()=>{
         
+            if (Name.value == "Mohamed" && Password.value == "IMDV_TM" && aboutWho.value == "Mohamed") {
+                alert("Welcome Mohamed Vaseem");
+                window.open("cals.html")
+            }
+            
            
             else {
-                alert("Only Creator can Access the Web"); 
-            }
-        }
+                // alert("Only Creator can Access the Web");
+                
+               
+            }   
+        // },1000)
         })
 
         

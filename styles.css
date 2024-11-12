@@ -24,7 +24,7 @@ body{
     border-radius: 30px;
     background-color: aqua;
 }
-h1{
+#head{
     font-family: 'Alex Brush';
     font-size: 300px;
     position: absolute;
